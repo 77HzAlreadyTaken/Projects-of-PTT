@@ -12,3 +12,50 @@
     border-radius: 7%; /*设置圆角*/
     float: left;
 }
+
+.page{
+    background-color: #68cdd5;
+    padding-bottom: 100%;
+}
+img {
+    height: auto;
+    width: auto\9;
+}
+.back{
+    padding: 5% 5%;
+    background-image: url(/images/01.png);
+    background-size:100% 100%;
+}
+.logo{
+    padding-top: 7%;
+    text-align: center;
+}
+.about{
+    color: white;
+    text-align: left;
+    font-size: 11pt;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15%;
+    font-weight: bold;
+    font-family: 微软雅黑 Light;
+    letter-spacing: 1.5pt;
+
+}
+.left{
+    padding-top: 25%;
+    padding-left: 10%;
+}
+.left>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.right{
+    padding-right: 10%;
+}
+.right>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+}
