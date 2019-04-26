@@ -12,7 +12,9 @@
     border-radius: 7%; /*设置圆角*/
     float: left;
 }
-
+body{
+    font-family: "微软雅黑 Light",serif;
+}
 .page{
     background-color: #68cdd5;
     padding-bottom: 100%;
@@ -38,7 +40,6 @@ img {
     padding-right: 10%;
     padding-top: 15%;
     font-weight: bold;
-    font-family: 微软雅黑 Light;
     letter-spacing: 1.5pt;
 
 }
