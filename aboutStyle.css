@@ -13,50 +13,57 @@
     float: left;
 }
 body{
-    font-family: "微软雅黑 Light",serif;
+    font-size: 62.5%; /* (10/16)*100% */
 }
 .page{
     background-color: #68cdd5;
     padding-bottom: 100%;
-}
-img {
-    height: auto;
-    width: auto\9;
+    margin: 0 auto;
 }
 .back{
-    padding: 5% 5%;
-    background-image: url(/images/01.png);
-    background-size:100% 100%;
+    width: 5rem;
+
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
 }
 .logo{
-    padding-top: 7%;
+
+    padding-top: 5rem;
     text-align: center;
 }
-.about{
-    color: white;
-    text-align: left;
-    font-size: 11pt;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 15%;
-    font-weight: bold;
-    letter-spacing: 1.5pt;
 
+.about{
+    display: flex;
+    justify-content: center;/*使用flex让这个item居中*/
+    text-align: left;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: white;
+    font-size: 1rem; /* xxxxrem * 10px = px*/
+    font-family: "微软雅黑",serif;
+    letter-spacing: 1.5pt;
+}
+.right{
+    /*position: absolute;*/
+    /*值为绝对定位，该元素可放至页面任意位置，相对于页面中第一个父元素定位，属性top、right、bottom、left*/
+    margin-top: 7rem;
+    float: right;
+    padding-right: 3rem;
 }
 .left{
-    padding-top: 25%;
-    padding-left: 10%;
+    margin-top: 7rem;
+    padding-left: 3rem;
+
 }
+
 .left>p{
     color: white;
     font-weight: bold;
-    font-size: 12pt;
-}
-.right{
-    padding-right: 10%;
+    font-size: 1rem;
 }
 .right>p{
     color: white;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 1rem;
 }
