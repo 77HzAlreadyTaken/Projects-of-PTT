@@ -14,11 +14,13 @@
 }
 body{
     font-size: 62.5%; /* (10/16)*100% */
+    margin: 0;
 }
 .page{
     background-color: #68cdd5;
-    padding-bottom: 100%;
     margin: 0 auto;
+    height: 100vh; /*height=100vh 代替 padding-bottom=100%* 去充满屏幕，而当页面显示在小屏幕时避免出现须翻屏的滚动条*/
+
 }
 .back{
     width: 5rem;
@@ -37,26 +39,24 @@ body{
     justify-content: center;/*使用flex让这个item居中*/
     text-align: left;
     padding-top: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     color: white;
     font-size: 1rem; /* xxxxrem * 10px = px*/
-    font-family: "微软雅黑",serif;
-    letter-spacing: 1.5pt;
+    font-family: "黑体",serif;
+    font-weight: bold;
+    letter-spacing: 1pt;
 }
 .right{
     /*position: absolute;*/
     /*值为绝对定位，该元素可放至页面任意位置，相对于页面中第一个父元素定位，属性top、right、bottom、left*/
-    margin-top: 7rem;
     float: right;
-    padding-right: 3rem;
+    margin-right: 3rem;
 }
 .left{
-    margin-top: 7rem;
-    padding-left: 3rem;
-
+    margin-top: 5rem;
+    margin-left: 3rem;
 }
-
 .left>p{
     color: white;
     font-weight: bold;
