@@ -16,54 +16,64 @@ body{
     font-size: 62.5%; /* (10/16)*100% */
     margin: 0;
 }
-.page{
+.pageIntro{
     background-color: #68cdd5;
-    margin: 0 auto;
-    height: 100vh; /*height=100vh 代替 padding-bottom=100%* 去充满屏幕，而当页面显示在小屏幕时避免出现须翻屏的滚动条*/
-
+    padding-bottom:100%;
+    font-family: "华文细黑",serif;
 }
-.back{
-    width: 5rem;
 
-    padding-top: 1.2rem;
-    padding-left: 1.2rem;
+.back-logo{
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
-.logo{
+.back-logo>img{
+    width: 30px;
+}
 
-    padding-top: 5rem;
+.PTT-logo{
+    padding-top: 4rem;
     text-align: center;
 }
-
-.about{
+.PTT-logo>img{
+    width:100px;
+    height:auto;
+}
+.aboutPTT{
     display: flex;
     justify-content: center;/*使用flex让这个item居中*/
     text-align: left;
-    padding-top: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding-top: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     color: white;
-    font-size: 1rem; /* xxxxrem * 10px = px*/
-    font-family: "黑体",serif;
+    font-size: 0.9rem; /* xxxxrem * 10px = px*/
+    letter-spacing: 0.2rem;
     font-weight: bold;
-    letter-spacing: 1pt;
 }
-.right{
+
+.rightCircle{
     /*position: absolute;*/
     /*值为绝对定位，该元素可放至页面任意位置，相对于页面中第一个父元素定位，属性top、right、bottom、left*/
     float: right;
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
-.left{
-    margin-top: 5rem;
-    margin-left: 3rem;
+.leftCircle{
+    margin-top: 6rem;
+    margin-left: 4rem;
 }
-.left>p{
+.leftCircle>img{
+    width: 50px;
+}
+.rightCircle>img{
+    width: 50px;
+}
+.leftCircle>p{
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
-.right>p{
+.rightCircle>p{
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
