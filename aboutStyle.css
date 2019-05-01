@@ -153,7 +153,7 @@ body{
     width: 30px; /*元素显示比例大小*/
 }
 .icon-pwd{
-    position: absolute;/*在Num这个父节点中任意放置*/
+    position: absolute;/*在Pwd这个父节点中任意放置*/
     left: 0.6rem;
     top: 1.4rem;
 }
@@ -186,7 +186,7 @@ body{
     position: relative; /*相对定位，下边设置点击效果位置移动相对于当前父节点*/
 }
 .btn-login:active{
-    top: 0.05rem; /*设置点击button时位置向下移rem单位*/
+    top: 0.05rem; /*设置点击button时位置向下移 rem单位*/
 }
 /*————忘记密码部分—————*/
 .forgot{
