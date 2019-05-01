@@ -1,3 +1,4 @@
+/*——————————task01_九宫格————————————*/
 .container{
     width: 100%;
     padding-bottom: 100%;
@@ -12,6 +13,7 @@
     border-radius: 7%; /*设置圆角*/
     float: left;
 }
+/*——————————task03_魔镜介绍页——————————————*/
 body{
     font-size: 62.5%; /* (10/16)*100% */
     margin: 0;
@@ -76,4 +78,123 @@ body{
     color: white;
     font-weight: bold;
     font-size: 0.8rem;
+}
+/*——————————task04_移动端登录页——————————————*/
+
+/*————header部分—————*/
+
+.header{
+    height: 3rem;
+    background-color:#5fc0cd;
+    text-align: center;
+    font-family: "黑体",serif;
+}
+.register{
+    display: inline-block; /*span标签为行内元素，使用inline-block更改其为块级元素*/
+    padding-top: 0.8rem;
+    position: absolute;
+    left: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+}
+.login{
+    display: inline-block; /*span标签为行内元素，使用inline-block更改其为块级元素*/
+    padding-top: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.close{
+    display: inline-block; /*span标签为行内元素，使用inline-block更改其为块级元素*/
+    padding-top: 0.8rem;
+    position: absolute;
+    right: 1rem;
+    text-align: right;
+    font-size: 1rem;
+    color: white;
+}
+
+/*————下半页部分—————*/
+.mainInfo{
+    background-color:Gainsboro;
+    height: 100vh;
+}
+.Info-Box{
+    margin: 0.8rem 0;
+}
+.Num{
+    position: relative; /*保证icon-num的位置与其父节点对应*/
+}
+.icon-num>img{
+    width: 30px; /*元素显示比例大小*/
+}
+.icon-num{
+    position: absolute;/*在Num这个父节点中任意放置*/
+    left: 0.6rem;
+    top: 0.6rem;
+}
+.input-Num{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /*input使用width：100%占满页宽会越界*/
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 4rem;
+    border: 0;
+    outline: none; /*去掉选中input框时的样式（颜色）*/
+}
+.Pwd{
+    position: relative; /*保证icon-pwd的位置与其父节点对应*/
+}
+.icon-pwd>img{
+    width: 30px; /*元素显示比例大小*/
+}
+.icon-pwd{
+    position: absolute;/*在Num这个父节点中任意放置*/
+    left: 0.6rem;
+    top: 1.4rem;
+}
+.input-pwd{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 4rem;
+    border: 0;
+    outline: none;
+}
+.btn-login{
+    width: 100%;
+    border: 0;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: #5fc0cd;
+    text-align: center;
+    font-family: "华文细黑", serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1rem;
+    outline: none;
+    position: relative; /*相对定位，下边设置点击效果位置移动相对于当前父节点*/
+}
+.btn-login:active{
+    top: 0.05rem; /*设置点击button时位置向下移rem单位*/
+}
+/*————忘记密码部分—————*/
+.forgot{
+    padding-right: 0.8rem;
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.forgot>a{
+    color:#5fc0cd; /*a 标签文本的颜色单独设置*/
 }
