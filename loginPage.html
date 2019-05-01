@@ -16,11 +16,11 @@
     <div class="Info-Box">
          <div class="Num">
              <i class="icon-num"><img src="images/iphone2.png" alt=""/></i>
-             <input name="phoneNum" class="input-Num" type="text" placeholder="请输入手机号"/>
+             <input name="phoneNum" class="input-Num" type="number" oninput="if(value.length>11)value=value.slice(0,11)" placeholder="请输入手机号"/>
          </div>
          <div class="Pwd">
              <i class="icon-pwd"><img src="images/locked2.png" alt=""/></i>
-             <input name="passWord" class="input-pwd" type="text" placeholder="请输入密码"/>
+             <input name="passWord" class="input-pwd" type="password" maxlength="18" placeholder="请输入密码"/>
          </div>
          <input name="loginBtn" class="btn-login" type="button" value="登录"/><br/>
      </div>

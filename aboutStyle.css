@@ -88,32 +88,21 @@ body{
     background-color:#5fc0cd;
     text-align: center;
     font-family: "黑体",serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 3rem;
 }
 .register{
-    display: inline-block; /*span标签为行内元素，使用inline-block更改其为块级元素*/
-    padding-top: 0.8rem;
     position: absolute;
     left: 1rem;
-    text-align: left;
-    font-size: 1rem;
-    color: white;
 }
 .login{
-    display: inline-block; /*span标签为行内元素，使用inline-block更改其为块级元素*/
-    padding-top: 0.8rem;
     text-align: center;
-    font-size: 1rem;
     font-weight: bold;
-    color: white;
 }
 .close{
-    display: inline-block; /*span标签为行内元素，使用inline-block更改其为块级元素*/
-    padding-top: 0.8rem;
     position: absolute;
     right: 1rem;
-    text-align: right;
-    font-size: 1rem;
-    color: white;
 }
 
 /*————下半页部分—————*/
@@ -132,7 +121,7 @@ body{
 }
 .icon-num{
     position: absolute;/*在Num这个父节点中任意放置*/
-    left: 0.6rem;
+    left: 0.8rem;
     top: 0.6rem;
 }
 .input-Num{
@@ -154,7 +143,7 @@ body{
 }
 .icon-pwd{
     position: absolute;/*在Pwd这个父节点中任意放置*/
-    left: 0.6rem;
+    left: 0.8rem;
     top: 1.4rem;
 }
 .input-pwd{
