@@ -187,3 +187,158 @@ body{
 .forgot>a{
     color:#5fc0cd; /*a 标签文本的颜色单独设置*/
 }
+
+/*——————————task05_护工个人主页——————————————*/
+.homePage{
+    height: 90vh;
+    margin: 0;
+}
+/*————header部分—————*/
+.home-header{
+    height: 3rem;
+    justify-items: center;
+    background-color: #5fc0cd;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "黑体",serif;
+    line-height: 3rem;
+}
+.home-back{
+    position: absolute;
+    left: 1rem;
+}
+.home-back>img{
+    width: 10px;
+}
+
+/*————footer部分—————*/
+.home-footer{
+    display: flex;
+    min-height: 100%;/*保证该父级可占满页面*/
+    flex-flow: row wrap;/*元素按行排列*/
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "黑体",serif;
+    line-height: 0.1rem;
+    position: relative;/*保证下层div设置相对于该父级*/
+}
+.btn-msg{
+    align-self: flex-end;/*使用flex 使元素放至页面底部*/
+    width: 47%;
+    height: 2rem;
+    color: #5fc0cd;
+    border: 0.1rem solid #5fc0cd;
+    border-radius: 0.3rem;
+}
+.btn-call{
+    position: absolute;
+    right: 0;/*使该div与父级div紧贴*/
+    align-self: flex-end;
+    width: 47%;
+    height: 2rem;
+    color: white;
+    border: 0.1rem solid #5fc0cd;
+    border-radius: 0.3rem;
+    background-color:#5fc0cd;
+}
+
+/*————护工个人信息部分—————*/
+.preInfo{
+    height: 80rem;
+    position: relative;
+}
+.bg-image{
+    font-family: "黑体",serif;
+    color: white;
+}
+.bg-image>img{
+    width: 100%;
+}
+.icon-pre{
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+}
+.icon-pre>img{
+    width: 60px;
+}
+.pre-name{
+    position: absolute;
+    left: 6rem;
+    top: 2rem;
+    font-size: 1rem;
+}
+.pre-age{
+    position: absolute;
+    left: 9.5rem;
+    top: 2rem;
+    font-size: 1rem;
+}
+.icon-loc{
+    position: absolute;
+    left: 6.1rem;
+    top: 4.8rem;
+}
+.icon-loc>img{
+    width: 10px;
+}
+.pre-loc{
+    position: absolute;
+    left: 7rem;
+    top: 3.9rem;
+    font-size: 0.8rem;
+}
+
+/*————护工专业技能部分—————*/
+.pre-list{
+    height: 50rem;
+    font-size: 1rem;
+    font-family: "黑体",serif;
+    position: relative;
+}
+.preTitle {
+    margin: 1.5rem;
+    font-weight: bold;
+}
+.line-blue{
+    position: absolute;
+    top: 0.15rem;
+    left: 0.8rem;
+    float:left;
+    width: 4px;
+    height: 14px;
+    background:#5fc0cd;
+}
+.list{
+    margin-left: 1.5rem;
+}
+.star{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.icon-star>img{
+    width: 14px;
+}
+.time{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.time1{
+    color: grey;
+}
+.time2{
+    padding-left: 1.5rem;
+}
+.line{
+    float: left;
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
