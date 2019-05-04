@@ -190,13 +190,14 @@ body{
 
 /*——————————task05_护工个人主页——————————————*/
 .homePage{
-    height: 90vh;
     margin: 0;
 }
 /*————header部分—————*/
 .home-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 3rem;
-    justify-items: center;
     background-color: #5fc0cd;
     text-align: center;
     font-size: 1.2rem;
@@ -215,29 +216,26 @@ body{
 /*————footer部分—————*/
 .home-footer{
     display: flex;
-    min-height: 100%;/*保证该父级可占满页面*/
-    flex-flow: row wrap;/*元素按行排列*/
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width:100%;
+    position: fixed;
+    bottom: 0;
     text-align: center;
     font-size: 1rem;
     font-family: "黑体",serif;
     line-height: 0.1rem;
-    position: relative;/*保证下层div设置相对于该父级*/
+    background-color: white;
 }
 .btn-msg{
-    align-self: flex-end;/*使用flex 使元素放至页面底部*/
-    width: 47%;
+    margin: 1.5rem;
+    width: 50%;
     height: 2rem;
     color: #5fc0cd;
     border: 0.1rem solid #5fc0cd;
     border-radius: 0.3rem;
 }
 .btn-call{
-    position: absolute;
-    right: 0;/*使该div与父级div紧贴*/
-    align-self: flex-end;
-    width: 47%;
+    margin: 1.5rem;
+    width: 50%;
     height: 2rem;
     color: white;
     border: 0.1rem solid #5fc0cd;
@@ -247,6 +245,7 @@ body{
 
 /*————护工个人信息部分—————*/
 .preInfo{
+    margin-top: 3rem;
     height: 80rem;
     position: relative;
 }
@@ -294,7 +293,6 @@ body{
 
 /*————护工专业技能部分—————*/
 .pre-list{
-    height: 50rem;
     font-size: 1rem;
     font-family: "黑体",serif;
     position: relative;
@@ -307,13 +305,13 @@ body{
     position: absolute;
     top: 0.15rem;
     left: 0.8rem;
-    float:left;
     width: 4px;
     height: 14px;
     background:#5fc0cd;
 }
 .list{
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 .star{
     margin-top: 1.5rem;
@@ -322,7 +320,26 @@ body{
 .icon-star>img{
     width: 14px;
 }
-.time{
+.workYear{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.year1{
+    color: grey;
+}
+.year2{
+    padding-left: 1.5rem;
+}
+.line1{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.workTime{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     position: relative;
@@ -330,15 +347,55 @@ body{
 .time1{
     color: grey;
 }
-.time2{
-    padding-left: 1.5rem;
-}
-.line{
-    float: left;
+.line2{
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
     height: 20px;
     background:gray;
+}
+.time2{
+    padding-left: 1.5rem;
+}
+.workPrice{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.price1{
+    color: grey;
+}
+.line3{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.price2{
+    padding-left: 1.5rem;
+    color: red;
+}
+.workTalk{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.talk1{
+    color: grey;
+}
+.line4{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.talk2{
+    padding-left: 6rem;
+    display: flex;
+    justify-items: center;
 }
