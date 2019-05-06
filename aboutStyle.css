@@ -17,6 +17,7 @@
 body{
     font-size: 62.5%; /* (10/16)*100% */
     margin: 0;
+    /*overflow-y: hidden;*/
 }
 .pageIntro{
     background-color: #68cdd5;
@@ -191,7 +192,15 @@ body{
 /*——————————task05_护工个人主页——————————————*/
 .homePage{
     margin-bottom: 10rem;
-    overflow-y: hidden;
+    margin-right: 1rem;
+}
+.t5_scrollbar{
+    position: absolute;
+    right: 0.2rem;
+    width: 10px;
+    height: 100vh;
+    background-color: #cccccc;
+    border-radius: 2rem;
 }
 
 /*————header部分—————*/
