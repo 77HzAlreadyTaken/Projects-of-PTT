@@ -4,3 +4,5 @@ make the squared
 make the mirrorPage
 # task04
 make the loginPage
+# task05
+make the homePage
