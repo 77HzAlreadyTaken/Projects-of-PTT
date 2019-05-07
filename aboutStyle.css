@@ -17,6 +17,7 @@
 body{
     font-size: 62.5%; /* (10/16)*100% */
     margin: 0;
+    /*overflow-y: hidden;*/
 }
 .pageIntro{
     background-color: #68cdd5;
@@ -186,4 +187,228 @@ body{
 }
 .forgot>a{
     color:#5fc0cd; /*a 标签文本的颜色单独设置*/
+}
+
+/*——————————task05_护工个人主页——————————————*/
+.homePage{
+    margin-bottom: 10rem;
+    margin-right: 1rem;
+}
+.t5_scrollbar{
+    position: absolute;
+    right: 0.2rem;
+    width: 10px;
+    height: 100vh;
+    background-color: #cccccc;
+    border-radius: 2rem;
+}
+
+/*————header部分—————*/
+.home-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #5fc0cd;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "黑体",serif;
+    line-height: 3rem;
+    z-index: 1; /*提高当前层级，解决图片覆盖header区域及header区域透明显示*/
+}
+.home-back{
+    position: absolute;
+    left: 1rem;
+}
+.home-back>img{
+    width: 10px;
+}
+
+/*————footer部分—————*/
+.home-footer{
+    display: flex;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "黑体",serif;
+    line-height: 0.1rem;
+    background-color: white;
+}
+.btn-msg{
+    margin: 1.5rem;
+    width: 50%;
+    height: 2rem;
+    color: #5fc0cd;
+    border: 0.1rem solid #5fc0cd;
+    border-radius: 0.3rem;
+}
+.btn-call{
+    margin: 1.5rem;
+    width: 50%;
+    height: 2rem;
+    color: white;
+    border: 0.1rem solid #5fc0cd;
+    border-radius: 0.3rem;
+    background-color:#5fc0cd;
+}
+
+/*————护工个人信息部分—————*/
+.preInfo{
+    margin-top: 3rem;
+    position: relative;
+}
+.bg-image{
+    font-family: "黑体",serif;
+    color: white;
+}
+.bg-image>img{
+    width: 100%;
+}
+.icon-pre{
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+}
+.icon-pre>img{
+    width: 60px;
+}
+.pre-name{
+    position: absolute;
+    left: 6rem;
+    top: 2rem;
+    font-size: 1rem;
+}
+.pre-age{
+    position: absolute;
+    left: 9.5rem;
+    top: 2rem;
+    font-size: 1rem;
+}
+.icon-loc{
+    position: absolute;
+    left: 6.1rem;
+    top: 4.8rem;
+}
+.icon-loc>img{
+    width: 10px;
+}
+.pre-loc{
+    position: absolute;
+    left: 7rem;
+    top: 3.9rem;
+    font-size: 0.8rem;
+}
+
+/*————护工专业技能部分—————*/
+.pre-list{
+    font-size: 1rem;
+    font-family: "黑体",serif;
+    position: relative;
+}
+.preTitle {
+    margin: 1.5rem;
+    font-weight: bold;
+}
+.line-blue{
+    position: absolute;
+    top: 0.15rem;
+    left: 0.8rem;
+    width: 4px;
+    height: 14px;
+    background:#5fc0cd;
+}
+.list{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.star{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.icon-star>img{
+    width: 14px;
+}
+.workYear{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.year1{
+    color: grey;
+}
+.year2{
+    padding-left: 1.5rem;
+}
+.line1{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.workTime{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.time1{
+    color: grey;
+}
+.line2{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.time2{
+    padding-left: 1.5rem;
+}
+.workPrice{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.price1{
+    color: grey;
+}
+.line3{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.price2{
+    padding-left: 1.5rem;
+    color: red;
+}
+.workTalk{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.talk1{
+    color: grey;
+}
+.line4{
+    position: absolute;
+    top: 0.1rem;
+    left: 5rem;
+    width: 1px;
+    height: 20px;
+    background:gray;
+}
+.talk2{
+    display: block;
+    margin-top: -1rem;
+    margin-left: 6rem;
+
+
 }
