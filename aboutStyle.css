@@ -192,16 +192,16 @@ body{
 /*——————————task05_护工个人主页——————————————*/
 .homePage{
     margin-bottom: 10rem;
-    margin-right: 1rem;
+    /*margin-right: 1rem;*/
 }
-.t5_scrollbar{
+/*.t5_scrollbar{
     position: absolute;
     right: 0.2rem;
     width: 10px;
     height: 100vh;
     background-color: #cccccc;
     border-radius: 2rem;
-}
+}*/
 
 /*————header部分—————*/
 .home-header{
@@ -234,21 +234,21 @@ body{
     text-align: center;
     font-size: 1rem;
     font-family: "黑体",serif;
-    line-height: 0.1rem;
+    line-height: 0.5rem;
     background-color: white;
 }
 .btn-msg{
-    margin: 1.5rem;
+    margin: 0.8rem;
     width: 50%;
-    height: 2rem;
+    height: 2.5rem;
     color: #5fc0cd;
     border: 0.1rem solid #5fc0cd;
     border-radius: 0.3rem;
 }
 .btn-call{
-    margin: 1.5rem;
+    margin: 0.8rem;
     width: 50%;
-    height: 2rem;
+    height: 2.5rem;
     color: white;
     border: 0.1rem solid #5fc0cd;
     border-radius: 0.3rem;
@@ -263,9 +263,10 @@ body{
 .bg-image{
     font-family: "黑体",serif;
     color: white;
-}
-.bg-image>img{
-    width: 100%;
+    height: 170px;
+    background-image: url("images/icon-bg.png"); /*背景图显示须指定宽高！！！*/
+    background-repeat: no-repeat;
+    background-size: cover;/*扩展图像放大缩小*/
 }
 .icon-pre{
     position: absolute;
@@ -317,12 +318,12 @@ body{
     top: 0.15rem;
     left: 0.8rem;
     width: 4px;
-    height: 14px;
+    height: 15px;
     background:#5fc0cd;
 }
 .list{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .star{
     margin-top: 1.5rem;
@@ -393,22 +394,23 @@ body{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     position: relative;
+    display: flex;
 }
 .talk1{
     color: grey;
+    display: flex;
+    align-items: center;
+    min-width: 5rem;
+}
+.talk2{
+    display: flex;
+    padding-left: 1rem;
 }
 .line4{
-    position: absolute;
-    top: 0.1rem;
-    left: 5rem;
+    display: flex;
+    align-self: center; /*主样式关键 https://www.cnblogs.com/lixuemin/p/6110434.html*/
     width: 1px;
     height: 20px;
     background:gray;
-}
-.talk2{
-    display: block;
-    margin-top: -1rem;
-    margin-left: 6rem;
-
-
+    flex-shrink: 0;/*解决竖线在设备宽度过小时消失不见*/
 }
