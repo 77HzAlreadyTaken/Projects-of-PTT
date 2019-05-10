@@ -220,7 +220,7 @@ body{
 }
 .home-back{
     position: absolute;
-    left: 1rem;
+    left: 1.4rem;
 }
 .home-back>img{
     width: 10px;
@@ -239,15 +239,15 @@ body{
     background-color: white;
 }
 .btn-msg{
-    margin: 0.8rem;
+    margin: 0.8rem 0.8rem 0.8rem 1.3rem;
     width: 50%;
     height: 2.5rem;
     color: #5fc0cd;
-    border: 0.1rem solid #5fc0cd;
+    border: 0.08rem solid #5fc0cd;
     border-radius: 0.3rem;
 }
 .btn-call{
-    margin: 0.8rem;
+    margin: 0.8rem 1.3rem 0.8rem 0.8rem;
     width: 50%;
     height: 2.5rem;
     color: white;
@@ -257,6 +257,11 @@ body{
 }
 
 /*————护工个人信息部分—————*/
+hr{
+    border: none;
+    height: 1px;
+    background-color: #e1e5e7
+}
 .preInfo{
     margin-top: 3rem;
     position: relative;
@@ -271,36 +276,36 @@ body{
 }
 .icon-pre{
     position: absolute;
-    left: 1rem;
-    top: 2.5rem;
+    left: 1.25rem;
+    top: 2.6rem;
 }
 .icon-pre>img{
-    width: 60px;
+    width: 85px;
 }
 .pre-name{
     position: absolute;
-    left: 6rem;
-    top: 2rem;
+    left: 8rem;
+    top: 2.8rem;
     font-size: 1rem;
 }
 .pre-age{
     position: absolute;
-    left: 9.5rem;
-    top: 2rem;
+    left: 12.1rem;
+    top: 2.8rem;
     font-size: 1rem;
 }
 .icon-loc{
     position: absolute;
-    left: 6.1rem;
-    top: 4.8rem;
+    left: 8.2rem;
+    top: 5.6rem;
 }
 .icon-loc>img{
     width: 10px;
 }
 .pre-loc{
     position: absolute;
-    left: 7rem;
-    top: 3.9rem;
+    left: 9.2rem;
+    top: 4.7rem;
     font-size: 0.8rem;
 }
 
@@ -311,14 +316,14 @@ body{
     position: relative;
 }
 .preTitle {
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 1.5rem 2rem;
     font-weight: bold;
 }
 .line-blue{
     position: absolute;
     top: 0.15rem;
-    left: 0.8rem;
-    width: 4px;
+    left: 1.27rem;
+    width: 2px;
     height: 15px;
     background:#5fc0cd;
 }
@@ -329,106 +334,111 @@ body{
 .star{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 1.1rem;
     position: relative;
 }
-.icon-star1>img{
+.icon-starLive>img{
     width: 14px;
 }
-.icon-star2>img{
+.icon-starEat>img{
     width: 14px;
 }
-.line{
+.lineStar{
     position: absolute;
-    top: 0.1rem;
+    top: 0.15rem;
     left: 4.1rem;
     width: 1px;
-    height: 17px;
+    height: 15px;
     background:#e1e5e7;
 }
-.icon-star2{
-    margin-left: 1.2rem;
+.icon-starEat{
+    margin-left: 1.1rem;
 }
 .workYear{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 1.1rem;
     position: relative;
 }
-.year1{
+.yearTit{
     color: grey;
 }
-.year2{
+.yearCon{
     padding-left: 1.5rem;
     color: #333333;
 }
-.line1{
+.lineYear{
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
-    height: 17px;
+    height: 15px;
     background:#e1e5e7;
 }
 .workTime{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 1.1rem;
     position: relative;
 }
-.time1{
+.timeTit{
     color: grey;
 }
-.line2{
+.lineTime{
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
-    height: 17px;
+    height: 15px;
     background:#e1e5e7;
 }
-.time2{
+.timeCon{
     padding-left: 1.5rem;
     color: #333333;
 }
 .workPrice{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 1.1rem;
     position: relative;
 }
-.price1{
+.priceTit{
     color: grey;
 }
-.line3{
+.linePri{
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
-    height: 17px;
+    height: 15px;
     background:#e1e5e7;
 }
-.price2{
+.priceCon{
     padding-left: 1.5rem;
     color: #e26163;
 }
 .workTalk{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 1.1rem;
     position: relative;
     display: flex;
 }
-.talk1{
+.talkTit{
     color: grey;
     display: flex;
     align-items: center;
     min-width: 5rem;
 }
-.talk2{
+.talkCon{
     padding-left: 1rem;
     color: #333333;
 }
-.line4{
+.lineTalk{
     display: flex;
     align-self: center; /*主样式关键 https://www.cnblogs.com/lixuemin/p/6110434.html*/
     width: 1px;
-    height: 17px;
+    height: 15px;
     background:#e1e5e7;
     flex-shrink: 0;/*解决竖线在设备宽度过小时消失不见*/
 }
