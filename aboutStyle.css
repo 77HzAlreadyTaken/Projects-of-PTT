@@ -1,154 +1,151 @@
 /*——————————task01_九宫格————————————*/
-.container{
-    width: 100%;
+.container {
+    padding-top: 4%;
     padding-bottom: 100%;
     padding-left: 2%;
-    padding-top: 4%;
+    width: 100%;
 }
-.box{
-    background-color: orange;
-    width: 30%;
-    padding-bottom: 30%; /*自适应*/
-    margin: 1%;
-    border-radius: 7%; /*设置圆角*/
+.box {
     float: left;
+    margin: 1%;
+    padding-bottom: 30%; /*自适应*/
+    width: 30%;
+    border-radius: 7%; /*设置圆角*/
+    background-color: orange;
 }
 /*——————————task03_魔镜介绍页——————————————*/
-body{
-    font-size: 62.5%; /* (10/16)*100% */
-    margin: 0;
+body {
     /*overflow-y: hidden;*/
+    margin: 0;
+    font-size: 62.5%; /* (10/16)*100% */
 }
-.pageIntro{
+.pageIntro {
+    padding-bottom: 100%;
+    font-family: "华文细黑", serif;
     background-color: #68cdd5;
-    padding-bottom:100%;
-    font-family: "华文细黑",serif;
 }
 
-.back-logo{
+.back-logo {
     padding-top: 1rem;
     padding-left: 1rem;
 }
-.back-logo>img{
+.back-logo > img {
     width: 30px;
 }
-
-.PTT-logo{
+.PTT-logo {
     padding-top: 4rem;
     text-align: center;
 }
-.PTT-logo>img{
-    width:100px;
-    height:auto;
+.PTT-logo > img {
+    width: 100px;
+    height: auto;
 }
-.aboutPTT{
+.aboutPTT {
     display: flex;
     justify-content: center;/*使用flex让这个item居中*/
-    text-align: left;
-    padding-top: 4rem;
-    margin-left: 4rem;
     margin-right: 4rem;
-    color: white;
+    margin-left: 4rem;
+    padding-top: 4rem;
     font-size: 0.9rem; /* xxxxrem * 10px = px*/
-    letter-spacing: 0.2rem;
     font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    color: white;
 }
 
-.rightCircle{
+.rightCircle {
     /*position: absolute;*/
     /*值为绝对定位，该元素可放至页面任意位置，相对于页面中第一个父元素定位，属性top、right、bottom、left*/
     float: right;
     margin-right: 4rem;
 }
-.leftCircle{
+.leftCircle {
     margin-top: 6rem;
     margin-left: 4rem;
 }
-.leftCircle>img{
+.leftCircle > img {
     width: 50px;
 }
-.rightCircle>img{
+.rightCircle > img {
     width: 50px;
 }
-.leftCircle>p{
-    color: white;
-    font-weight: bold;
+.leftCircle > p {
     font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
 }
-.rightCircle>p{
-    color: white;
-    font-weight: bold;
+.rightCircle > p {
     font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
 }
 /*——————————task04_移动端登录页——————————————*/
 
 /*————header部分—————*/
 
-.header{
+.header {
     height: 3rem;
-    background-color:#5fc0cd;
+    font: 1rem/3rem "黑体", serif; /* font-family: "黑体", serif; line-height: 3rem; font-size: 1rem;*/
     text-align: center;
-    font-family: "黑体",serif;
-    font-size: 1rem;
     color: white;
-    line-height: 3rem;
+    background-color: #5fc0cd;
 }
-.register{
+.register {
     position: absolute;
     left: 1rem;
 }
-.login{
-    text-align: center;
+.login {
     font-weight: bold;
+    text-align: center;
 }
-.close{
+.close {
     position: absolute;
     right: 1rem;
 }
 
 /*————下半页部分—————*/
-.mainInfo{
-    background-color:Gainsboro;
+.mainInfo {
     height: 100vh;
+    background-color: Gainsboro;
 }
-.Info-Box{
+.Info-Box {
     margin: 0.8rem 0;
 }
-.Num{
+.Num {
     position: relative; /*保证icon-num的位置与其父节点对应*/
 }
-.icon-num>img{
+.icon-num > img {
     width: 30px; /*元素显示比例大小*/
 }
-.icon-num{
+.icon-num {
     position: absolute;/*在Num这个父节点中任意放置*/
     left: 0.8rem;
     top: 0.6rem;
 }
-.input-Num{
-    width: 100%;
+.input-Num {
+    border: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; /*input使用width：100%占满页宽会越界*/
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 4rem;
-    border: 0;
+    width: 100%;
     outline: none; /*去掉选中input框时的样式（颜色）*/
 }
-.Pwd{
+.Pwd {
     position: relative; /*保证icon-pwd的位置与其父节点对应*/
 }
-.icon-pwd>img{
+.icon-pwd > img {
     width: 30px; /*元素显示比例大小*/
 }
-.icon-pwd{
+.icon-pwd {
     position: absolute;/*在Pwd这个父节点中任意放置*/
     left: 0.8rem;
     top: 1.4rem;
 }
-.input-pwd{
-    width: 100%;
+.input-pwd {
+    border: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -156,46 +153,45 @@ body{
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 4rem;
-    border: 0;
-    outline: none;
-}
-.btn-login{
     width: 100%;
+    outline: none;/*button的边框样式设置 none为都无*/
+}
+.btn-login {
+    position: relative; /*相对定位，下边设置点击效果位置移动相对于当前父节点*/
     border: 0;
     margin-top: 0.8rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    background-color: #5fc0cd;
-    text-align: center;
-    font-family: "华文细黑", serif;
-    font-size: 1rem;
+    width: 100%;
+    font: 1rem "华文细黑", serif;
     font-weight: bold;
-    color: white;
     letter-spacing: 1rem;
-    outline: none;
-    position: relative; /*相对定位，下边设置点击效果位置移动相对于当前父节点*/
+    text-align: center;
+    color: white;
+    outline: none;/*button的边框样式设置 none为都无*/
+    background-color: #5fc0cd;
 }
-.btn-login:active{
+.btn-login:active {
     top: 0.05rem; /*设置点击button时位置向下移 rem单位*/
 }
 /*————忘记密码部分—————*/
-.forgot{
+.forgot {
     padding-right: 0.8rem;
-    text-align: right;
     font-size: 0.8rem;
     font-weight: bold;
+    text-align: right;
 }
-.forgot>a{
-    color:#5fc0cd; /*a 标签文本的颜色单独设置*/
+.forgot > a {
+    color: #5fc0cd; /*a 标签文本的颜色单独设置*/
 }
 
 /*——————————task05_护工个人主页——————————————*/
-.homePage{
+.homePage {
+    /*margin-right: 1rem;*/
     margin-bottom: 5rem;
     background-color: white;
-    /*margin-right: 1rem;*/
 }
-/*.t5_scrollbar{
+/*.t5_scrollbar {
     position: absolute;
     right: 0.2rem;
     width: 10px;
@@ -205,240 +201,238 @@ body{
 }*/
 
 /*————header部分—————*/
-.home-header{
+.home-header {
     position: fixed;
     top: 0;
     width: 100%;
     height: 3rem;
-    background-color: #5fc0cd;
-    text-align: center;
-    font-size: 1.2rem;
-    color: white;
-    font-family: "黑体",serif;
-    line-height: 3rem;
     z-index: 1; /*提高当前层级，解决图片覆盖header区域及header区域透明显示*/
+    font: 1.2rem/3rem "黑体", serif; /*font-size: 1.2rem; line-height: 3rem; font-family: "黑体", serif;*/
+    text-align: center;
+    color: white;
+    background-color: #5fc0cd;
 }
-.home-back{
+.home-back {
     position: absolute;
     left: 1.4rem;
 }
-.home-back>img{
+.home-back > img {
     width: 10px;
 }
 
 /*————footer部分—————*/
-.home-footer{
-    display: flex;
-    width:100%;
+.home-footer {
     position: fixed;
     bottom: 0;
+    display: flex;
+    width:100%;
+    font: 1rem/0.5rem "黑体", serif; /*font-size: 1rem; line-height: 0.5rem; font-family: "黑体", serif;*/
     text-align: center;
-    font-size: 1rem;
-    font-family: "黑体",serif;
-    line-height: 0.5rem;
     background-color: white;
 }
-.btn-msg{
+.btn-msg {
+    border: 0.08rem solid #5fc0cd;
+    border-radius: 0.3rem;
     margin: 0.8rem 0.8rem 0.8rem 1.3rem;
     width: 50%;
     height: 2.5rem;
     color: #5fc0cd;
-    border: 0.08rem solid #5fc0cd;
-    border-radius: 0.3rem;
 }
-.btn-call{
+.btn-call {
+    border: 0.1rem solid #5fc0cd;
+    border-radius: 0.3rem;
     margin: 0.8rem 1.3rem 0.8rem 0.8rem;
     width: 50%;
     height: 2.5rem;
     color: white;
-    border: 0.1rem solid #5fc0cd;
-    border-radius: 0.3rem;
-    background-color:#5fc0cd;
+    background-color: #5fc0cd;
+
 }
 
 /*————护工个人信息部分—————*/
-hr{
+hr {
     border: none;
     height: 1px;
     background-color: #e1e5e7
 }
-.preInfo{
-    margin-top: 3rem;
+.preInfo {
     position: relative;
+    margin-top: 3rem;
 }
-.bg-image{
-    font-family: "黑体",serif;
-    color: white;
+.bg-image {
     height: 170px;
+    font-family: "黑体", serif;
     background-image: url("images/icon-bg.png"); /*背景图显示须指定宽高！！！*/
     background-repeat: no-repeat;
     background-size: cover;/*扩展图像放大缩小*/
+    color: white;
 }
-.icon-pre{
+.icon-pre {
     position: absolute;
-    left: 1.25rem;
     top: 2.6rem;
+    left: 1.25rem;
 }
-.icon-pre>img{
+.icon-pre > img {
     width: 85px;
 }
-.pre-name{
+.pre-name {
     position: absolute;
+    top: 2.8rem;
     left: 8rem;
-    top: 2.8rem;
     font-size: 1rem;
 }
-.pre-age{
+.pre-age {
     position: absolute;
+    top: 2.8rem;
     left: 12.1rem;
-    top: 2.8rem;
     font-size: 1rem;
 }
-.icon-loc{
+.icon-loc {
     position: absolute;
-    left: 8.2rem;
     top: 5.6rem;
+    left: 8.2rem;
 }
-.icon-loc>img{
+.icon-loc > img {
     width: 10px;
 }
-.pre-loc{
+.pre-loc {
     position: absolute;
-    left: 9.2rem;
     top: 4.7rem;
+    left: 9.2rem;
     font-size: 0.8rem;
 }
 
 /*————护工专业技能部分—————*/
-.pre-list{
-    font-size: 1rem;
-    font-family: "黑体",serif;
+.pre-list {
     position: relative;
+    font-size: 1rem;
+    font-family: "黑体", serif;
 }
 .preTitle {
     margin: 1.5rem 1.5rem 1.5rem 2rem;
     font-weight: bold;
 }
-.line-blue{
+.line-blue {
     position: absolute;
     top: 0.15rem;
     left: 1.27rem;
     width: 2px;
     height: 15px;
-    background:#5fc0cd;
+    background: #5fc0cd;
 }
-.list{
-    margin-left: 1rem;
+.list {
     margin-right: 1rem;
+    margin-left: 1rem;
 }
-.star{
+.star {
+    position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.1rem;
-    position: relative;
 }
-.icon-starLive>img{
+.icon-starLive > img {
     width: 14px;
 }
-.icon-starEat>img{
+.icon-starEat > img {
     width: 14px;
 }
-.lineStar{
+.lineStar {
     position: absolute;
     top: 0.15rem;
     left: 4.1rem;
     width: 1px;
     height: 15px;
-    background:#e1e5e7;
+    background: #e1e5e7;
 }
-.icon-starEat{
+.icon-starEat {
     margin-left: 1.1rem;
 }
-.workYear{
+.workYear {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.1rem;
     position: relative;
 }
-.yearTit{
+.yearTit {
     color: grey;
 }
-.yearCon{
+.yearCon {
     padding-left: 1.5rem;
     color: #333333;
 }
-.lineYear{
+.lineYear {
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
     height: 15px;
-    background:#e1e5e7;
+    background: #e1e5e7;
 }
-.workTime{
+.workTime {
+    position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.1rem;
-    position: relative;
 }
-.timeTit{
+.timeTit {
     color: grey;
 }
-.lineTime{
+.lineTime {
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
     height: 15px;
-    background:#e1e5e7;
+    background: #e1e5e7;
 }
-.timeCon{
+.timeCon {
     padding-left: 1.5rem;
     color: #333333;
 }
-.workPrice{
+.workPrice {
+    position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.1rem;
-    position: relative;
 }
-.priceTit{
+.priceTit {
     color: grey;
 }
-.linePri{
+.linePri {
     position: absolute;
     top: 0.1rem;
     left: 5rem;
     width: 1px;
     height: 15px;
-    background:#e1e5e7;
+    background: #e1e5e7;
 }
-.priceCon{
+.priceCon {
     padding-left: 1.5rem;
     color: #e26163;
 }
-.workTalk{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 1.1rem;
+.workTalk {
     position: relative;
     display: flex;
+    margin-left: 1.1rem;
 }
-.talkTit{
-    color: grey;
+.talkTit {
     display: flex;
     align-items: center;
     min-width: 5rem;
+    margin: 5px 0;/*0的话不需px单位*/
+    color: grey;
 }
-.talkCon{
+.talkCon {
+    margin: 5px 0;
     padding-left: 1rem;
     color: #333333;
 }
-.lineTalk{
+.lineTalk {
     display: flex;
     align-self: center; /*主样式关键 https://www.cnblogs.com/lixuemin/p/6110434.html*/
+    flex-shrink: 0;/*解决竖线在设备宽度过小时消失不见*/
+    margin: 5px 0;
     width: 1px;
     height: 15px;
-    background:#e1e5e7;
-    flex-shrink: 0;/*解决竖线在设备宽度过小时消失不见*/
+    background: #e1e5e7;
 }
