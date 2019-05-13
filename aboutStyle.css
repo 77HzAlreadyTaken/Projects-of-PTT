@@ -124,14 +124,14 @@ body {
 }
 .input-Num {
     border: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; /*input使用width：100%占满页宽会越界*/
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 4rem;
     width: 100%;
     outline: none; /*去掉选中input框时的样式（颜色）*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /*input使用width：100%占满页宽会越界*/
 }
 .Pwd {
     position: relative; /*保证icon-pwd的位置与其父节点对应*/
@@ -146,15 +146,15 @@ body {
 }
 .input-pwd {
     border: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     margin-top: 0.8rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 4rem;
     width: 100%;
     outline: none;/*button的边框样式设置 none为都无*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .btn-login {
     position: relative; /*相对定位，下边设置点击效果位置移动相对于当前父节点*/
@@ -228,22 +228,20 @@ body {
     width:100%;
     font: 1rem/0.5rem "黑体", serif; /*font-size: 1rem; line-height: 0.5rem; font-family: "黑体", serif;*/
     text-align: center;
-    background-color: white;
+    background-color: #ffffff;
 }
 .btn-msg {
     border: 0.08rem solid #5fc0cd;
-    border-radius: 0.3rem;
     margin: 0.8rem 0.8rem 0.8rem 1.3rem;
     width: 50%;
-    height: 2.5rem;
     color: #5fc0cd;
+    border-radius: 0.3rem;
 }
 .btn-call {
     border: 0.1rem solid #5fc0cd;
     border-radius: 0.3rem;
     margin: 0.8rem 1.3rem 0.8rem 0.8rem;
     width: 50%;
-    height: 2.5rem;
     color: white;
     background-color: #5fc0cd;
 
@@ -413,6 +411,8 @@ hr {
 .workTalk {
     position: relative;
     display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     margin-left: 1.1rem;
 }
 .talkTit {
